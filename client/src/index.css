@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App{
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 35px #eee; 
+}
+
+a{
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* for sort and filter */
+
+.filter_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+  height: auto;
+}
+
+.filter_menu input {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.filter_menu .search{
+  display: flex;
+  padding: 3px;
+  align-items: center;
+}
+
+.filter_menu .page{
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.filter_menu .sort{
+  display: flex;
+  padding: 2px;
+  align-items: center;
+}
+
+.filter_menu select {
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.filter_menu button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.filter_menu button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+
+@import url("./components/headers/header.css");
+@import url('./components/mainPages/products/product.css');
+@import url('./components/mainPages/utils/productDetails/detailProduct.css');
